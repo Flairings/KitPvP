@@ -13,13 +13,16 @@ Build-Enabled-Message: "{PREFIX} &fYou have &aenabled &fbuild mode."
 Build-Disabled-Message: "{PREFIX} &fYou have &cdisabled &fbuild mode."
 Player-Only-Message: "&cConsole may not use this command."
 
+# ** Death Messages **
+Death-Messages: "&e{KILLER} &chas killed &e{VICTIM}"
+
 # ** Kill rewards **
 kill-rewards:
   xp-amount: 3
   commands:
-    - crate key %player% Kill 1
-    - eco give %player% 100
-  message: '{PREFIX} &aYou have been given 100$ for killing %killed%'
+    - crate key {PLAYER} Kill 1
+    - eco give {PLAYER} 100
+  message: "{PREFIX} &aYou have been given 100$ for killing {PLAYER}" # {PLAYER} PLACEHOLDER NOT WORKING. NEED TO FIX !
 
 # Placeholders
 # {XP}
