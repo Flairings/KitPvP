@@ -1,0 +1,81 @@
+# KitPvP - 1.0
+
+# ** Prefix **
+# {PREFIX}
+Prefix: "&d&lUnoPvP &7┃"
+
+# ** Messages **
+No-Permissions-Message: "{PREFIX} &cYou do not have permissions"
+Reloaded-Message: "{PREFIX} &fKitPvP has been reloaded."
+OnBlockPlace-Message: "{PREFIX} &7&oYou have build mode disabled."
+OnBlockBreak-Message: "{PREFIX} &7&oYou have build mode disabled."
+Build-Enabled-Message: "{PREFIX} &fYou have &aenabled &fbuild mode."
+Build-Disabled-Message: "{PREFIX} &fYou have &cdisabled &fbuild mode."
+Player-Only-Message: "&cConsole may not use this command."
+
+# ** Kill rewards **
+kill-rewards:
+  xp-amount: 3
+  commands:
+    - crate key %player% Kill 1
+    - eco give %player% 100
+  message: '{PREFIX} &aYou have been given 100$ for killing %killed%'
+
+# Placeholders
+# {XP}
+# {CMDs}
+kill-rewards-help:
+  Message:
+    - "&6Current kill reward settings: "
+    - "&6XP: &f{XP}"
+    - "&6CMDs: &f{CMDs}"
+
+
+# ** Stats **
+# Placeholders
+# {Kills}
+# {Deaths}
+stats:
+  Message:
+    - "&7&m---------------------------"
+    - "&d&lStatistics"
+    - " &fKills&7: &d{KILLS}"
+    - " &fDeaths&7: &d{DEATHS}"
+    - "&7&m---------------------------"
+
+stats-other:
+  Message:
+    - "&7&m---------------------------"
+    - "&d&l{PLAYER}'s &d&lStatistics"
+    - " &fKills&7: &d{KILLS}"
+    - " &fDeaths&7: &d{DEATHS}"
+    - "&7&m---------------------------"
+
+# ** Help UI **
+items:
+  kitpvp:
+    title: '&dKitPvP Commands'
+    lore:
+      - ''
+      - '&8* &d/kit &8&m-&f Select a kit to fight with through a gui.'
+      - '&8* &d/kit <name> &8&m-&f Select a specific kit.'
+      - '&8* &d/crate &8&m-&f Exchange virtual keys for physical keys.'
+      - '&8* &d/pv <number> &8&m-&f Access your vault, store your items.'
+      - '&8* &cMore in development.'
+      - ''
+  howplay:
+    title: '&dHow to play'
+    lore:
+      - ''
+      - ' &fThe aim of the server is to fight with other players, to gain kill keys'
+      - ' &fabilities, more & progress through the server!'
+      - ''
+  economy:
+    title: '&dEconomy Commands'
+    lore:
+      - ''
+      - '&8* &d/bal &8&m-&f See how much money you have.'
+      - '&8* &d/money pay <name> &8&m-&f Send other players money.'
+      - '&8* &d/money check <name> &8&m-&f See the balance of others'
+      - '&8* &d/money top &8&m-&f See the players with the highest balance.'
+      - ''
