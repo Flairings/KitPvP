@@ -5,6 +5,7 @@ import me.flairings.kitpvp.api.UtilConfig;
 import me.flairings.kitpvp.commands.*;
 import me.flairings.kitpvp.events.BlockEvents;
 import me.flairings.kitpvp.events.DeathMessages;
+import me.flairings.kitpvp.events.JoinEvents;
 import me.flairings.kitpvp.events.KillRewardsEvent;
 import me.flairings.kitpvp.ui.HowToPlayUI;
 import me.flairings.kitpvp.utils.CC;
@@ -64,6 +65,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new KillRewardsEvent(), this);
         pm.registerEvents(new BlockEvents(), this);
         pm.registerEvents(new DeathMessages(), this);
+        pm.registerEvents(new JoinEvents(), this);
     }
 
     public void onDisable() {

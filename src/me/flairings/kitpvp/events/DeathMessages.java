@@ -14,11 +14,15 @@ public class DeathMessages implements Listener {
         Player player = event.getEntity();
         Player killer = player.getKiller();
         if (player.isDead() && player.getKiller() instanceof Player) {
-            Bukkit.getServer().broadcastMessage(CC.translate(Main.getInstance().getConfig().getString("Death-Messages"))
+            Bukkit.getServer().broadcastMessage(CC.translate(Main.getInstance().getConfig().getString("player-kill-player-message"))
                     .replace("{KILLER}", "" + killer.getName())
                     .replace("{VICTIM}", "" + player.getName())
                     .replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix")))));
+        }else{
+                Bukkit.getServer().broadcastMessage(CC.translate(Main.getInstance().getConfig().getString("death-message"))
+                        .replace("{VICTIM}", "" + player.getName())
+                        .replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix")))));
 
+            }
         }
     }
-}

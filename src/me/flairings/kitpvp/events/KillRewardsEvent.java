@@ -14,18 +14,19 @@ import static org.bukkit.Bukkit.getConsoleSender;
 public class KillRewardsEvent implements Listener {
     @EventHandler
     public void onDeath(PlayerDeathEvent event) {
-        Player player = event.getEntity();
-        if (player.isDead() && player.getKiller() instanceof Player) {
-            Player killer = player.getKiller();
-            killer.giveExpLevels(Main.getInstance().getConfig().getInt("kill-rewards.xp-amount"));
-            for (String commands : Main.getInstance().getConfig().getStringList("kill-rewards.commands")) {
-                dispatchCommand(getConsoleSender(), commands.replace("{PLAYER}", killer.getName()));
-                player.playSound(player.getLocation(), Sound.SUCCESSFUL_HIT, 2F, 1F);
+            Player player = event.getEntity();
+            if (player.isDead() && player.getKiller() instanceof Player) {
+                Player killer = player.getKiller();
+                killer.giveExpLevels(Main.getInstance().getConfig().getInt("kill-rewards.xp-amount"));
+                for (String commands : Main.getInstance().getConfig().getStringList("kill-rewards.commands")) {
+                    dispatchCommand(getConsoleSender(), commands.replace("{PLAYER}", killer.getName()));
+                    player.playSound(player.getLocation(), Sound.SUCCESSFUL_HIT, 2F, 1F);
 
+                }
+                killer.sendMessage(CC.translate(Main.getInstance().getConfig().getString("kill-rewards.message"))
+                        .replace("{PLAYER}", "" + player.getName())
+                        .replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix")))));
             }
-            killer.sendMessage(CC.translate(Main.getInstance().getConfig().getString("kill-rewards.message"))
-                    .replace("{PLAYER}", "" + player.getName())
-                    .replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix")))));
         }
     }
-}
+

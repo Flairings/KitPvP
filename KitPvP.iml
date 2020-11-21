@@ -20,7 +20,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/libs/lombok.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/ProtocolLib.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -29,18 +29,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/libs/Toothless.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/Toothless.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/src/libs/Toothless.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/Toothless.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/libs/ProtocolLib.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lombok.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

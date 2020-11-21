@@ -26,8 +26,8 @@ public class Reload implements CommandExecutor {
                 return true;
             }
             plugin.reloadConfig();
-            plugin.getPluginLoader().disablePlugin(plugin);
-            plugin.getPluginLoader().enablePlugin(plugin);
+            //plugin.getPluginLoader().disablePlugin(plugin); // CAUSES MULTI INSTANCES OF PLUGIN "KITPVP"
+            //plugin.getPluginLoader().enablePlugin(plugin);
             player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Reloaded-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
         }
             return false;

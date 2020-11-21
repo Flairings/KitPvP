@@ -17,7 +17,7 @@ public class KillRewards implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
         if (player.hasPermission("kitpvp.command.killrewards")) {
-            Main.getInstance().getConfig().getStringList("kill-rewards-help.Message").forEach(string -> sender.sendMessage(CC.translate(string)
+            Main.getInstance().getConfig().getStringList("kill-rewards-help.message").forEach(string -> sender.sendMessage(CC.translate(string)
                     .replace("{XP}", "" + Main.getInstance().getConfig().getInt("kill-rewards.xp-amount"))
                     .replace("{CMDs}", "" + Main.getInstance().getConfig().getStringList("kill-rewards.commands"))));
             return true;

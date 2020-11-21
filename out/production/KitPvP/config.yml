@@ -12,9 +12,17 @@ OnBlockBreak-Message: "{PREFIX} &7&oYou have build mode disabled."
 Build-Enabled-Message: "{PREFIX} &fYou have &aenabled &fbuild mode."
 Build-Disabled-Message: "{PREFIX} &fYou have &cdisabled &fbuild mode."
 Player-Only-Message: "&cConsole may not use this command."
+player-kill-player-message: "&e{KILLER} &chas killed &e{VICTIM}"
+death-message: "&e{VICTIM} &chas died"
 
-# ** Death Messages **
-Death-Messages: "&e{KILLER} &chas killed &e{VICTIM}"
+# ** Join Messages **
+join-events:
+  sound-enabled: true
+  messages:
+    - ""
+    - "&6You're now connected to our &6&lKitPvP &6server"
+    - "&7&oThe map began on the 1st of December."
+    - ""
 
 # ** Kill rewards **
 kill-rewards:
@@ -22,13 +30,13 @@ kill-rewards:
   commands:
     - crate key {PLAYER} Kill 1
     - eco give {PLAYER} 100
-  message: "{PREFIX} &aYou have been given 100$ for killing {PLAYER}" # {PLAYER} PLACEHOLDER NOT WORKING. NEED TO FIX !
+  message: "{PREFIX} &aYou have been given 100$ for killing {PLAYER}"
 
 # Placeholders
 # {XP}
 # {CMDs}
 kill-rewards-help:
-  Message:
+  message:
     - "&6Current kill reward settings: "
     - "&6XP: &f{XP}"
     - "&6CMDs: &f{CMDs}"
@@ -39,7 +47,7 @@ kill-rewards-help:
 # {Kills}
 # {Deaths}
 stats:
-  Message:
+  message:
     - "&7&m---------------------------"
     - "&d&lStatistics"
     - " &fKills&7: &d{KILLS}"
@@ -47,7 +55,7 @@ stats:
     - "&7&m---------------------------"
 
 stats-other:
-  Message:
+  message:
     - "&7&m---------------------------"
     - "&d&l{PLAYER}'s &d&lStatistics"
     - " &fKills&7: &d{KILLS}"
