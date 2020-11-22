@@ -26,6 +26,7 @@ join-events:
 
 # ** Kill rewards **
 kill-rewards:
+  sound-enabled: true
   xp-amount: 3
   commands:
     - crate key {PLAYER} Kill 1

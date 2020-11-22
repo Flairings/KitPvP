@@ -1,0 +1,23 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+  owner:
+    options:
+      prefix: owner
+schema-version: 1
+users:
+  0ecf6aa0-857c-4249-bd17-ea6873f9a942:
+    permissions:
+    - kitpvp.build
+    options:
+      name: Flairings
+    group:
+    - owner
+  10d35e48-7c16-472d-b248-c70eaaf5baa9:
+    permissions:
+    - kitpvp.helpgui
+    options:
+      name: TopSimp

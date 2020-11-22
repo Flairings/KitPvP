@@ -27,6 +27,8 @@ commands:
     description: Safely reloads the kitpvp core.
   killrewards:
     description: View the current kill reward settings
+  profile:
+    description: Change a users profile settings
 
 permissions:
   kitpvp.command.helpcommand:

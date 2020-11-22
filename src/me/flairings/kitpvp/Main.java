@@ -2,9 +2,15 @@ package me.flairings.kitpvp;
 
 import me.flairings.kitpvp.api.InventoryHandler;
 import me.flairings.kitpvp.api.UtilConfig;
-import me.flairings.kitpvp.commands.*;
+import me.flairings.kitpvp.commands.ProfileCommand;
+import me.flairings.kitpvp.commands.BuildCommand;
+import me.flairings.kitpvp.commands.HowToPlayCommand;
+import me.flairings.kitpvp.commands.KitPvPCommand;
+import me.flairings.kitpvp.commands.ReloadCommand;
+import me.flairings.kitpvp.commands.StatsCommand;
+import me.flairings.kitpvp.commands.KillRewardsCommand;
 import me.flairings.kitpvp.events.BlockEvents;
-import me.flairings.kitpvp.events.DeathMessages;
+import me.flairings.kitpvp.events.DeathEvent;
 import me.flairings.kitpvp.events.JoinEvents;
 import me.flairings.kitpvp.events.KillRewardsEvent;
 import me.flairings.kitpvp.ui.HowToPlayUI;
@@ -36,11 +42,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        instance = this;
-        playerlist = new ArrayList<>();
-        inventoryHandler = new InventoryHandler().init();
-        howToPlayUI = new HowToPlayUI();
-        this.createYML();
+        loadEngine();
         EventRegister();
         CommandRegister();
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
@@ -51,20 +53,36 @@ public class Main extends JavaPlugin {
 
     }
 
+    public void loadEngine() {
+        instance = this;
+        playerlist = new ArrayList<>();
+        inventoryHandler = new InventoryHandler().init();
+        howToPlayUI = new HowToPlayUI();
+        this.createYML();
+    }
+
     public void CommandRegister() {
-        new Build();
-        new Reload(this);
-        new KitPvP(this);
-        new Stats(this);
-        new KillRewards(this);
-        new HowToPlay(this);
+        // staff commands
+        new BuildCommand();
+        new KitPvPCommand(this);
+
+        // management commands
+        new ReloadCommand(this);
+
+        // essential commands
+        new StatsCommand(this);
+        new KillRewardsCommand(this);
+        new HowToPlayCommand(this);
+
+        // profile commands
+        new ProfileCommand(this);
     }
 
     public void EventRegister() {
         PluginManager pm = getPluginManager();
         pm.registerEvents(new KillRewardsEvent(), this);
         pm.registerEvents(new BlockEvents(), this);
-        pm.registerEvents(new DeathMessages(), this);
+        pm.registerEvents(new DeathEvent(), this);
         pm.registerEvents(new JoinEvents(), this);
     }
 

@@ -1,0 +1,149 @@
+# This is the main configuration file for PaperSpigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to PaperSpigot,
+# join us at the IRC.
+# 
+# IRC: #paperspigot @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=PaperSpigot )
+
+config-version: 9
+effect-modifiers:
+  strength: 1.3
+  weakness: -0.5
+stackable-buckets:
+  lava: false
+  water: false
+  milk: false
+data-value-allowed-items: []
+settings:
+  limit-player-interactions: true
+  baby-zombie-movement-speed: 0.5
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  netty-threads: 4
+  user-cache-size: 1000
+  bungeecord: false
+  late-bind: false
+  int-cache-limit: 1024
+  player-shuffle: 0
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
+  filter-creative-items: true
+  debug: false
+warnWhenSettingExcessiveVelocity: true
+world-settings:
+  default:
+    verbose: true
+    disable-explosion-knockback: false
+    water-over-lava-flow-speed: 5
+    tnt-entity-height-nerf: 0
+    fix-cannons: false
+    use-hopper-check: false
+    generator-settings:
+      canyon: true
+      caves: true
+      dungeon: true
+      fortress: true
+      mineshaft: true
+      monument: true
+      stronghold: true
+      temple: true
+      village: true
+      flat-bedrock: false
+    allow-block-location-tab-completion: true
+    use-async-lighting: false
+    disable-thunder: false
+    tick-next-tick-list-cap: 10000
+    tick-next-tick-list-cap-ignores-redstone: false
+    all-chunks-are-slime-chunks: false
+    allow-undead-horse-leashing: false
+    game-mechanics:
+      disable-end-credits: false
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: false
+    container-update-tick-rate: 1
+    keep-spawn-loaded: true
+    disable-mood-sounds: false
+    falling-blocks-collide-with-signs: false
+    portal-search-radius: 128
+    disable-ice-and-snow: false
+    despawn-ranges:
+      soft: 32
+      hard: 128
+    fast-drain:
+      lava: false
+      water: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
+    remove-unloaded:
+      enderpearls: true
+      tnt-entities: true
+      falling-blocks: true
+    lava-flow-speed:
+      normal: 30
+      nether: 10
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
+    disable-teleportation-suffocation-check: false
+    cache-chunk-maps: false
+    remove-invalid-mob-spawner-tile-entities: true
+    player-blocking-damage-multiplier: 0.5
+    optimize-explosions: false
+    mob-spawner-tick-rate: 1
+    tnt-explosion-volume: 4.0
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    nether-ceiling-void-damage: false
+    falling-block-height-nerf: 0
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
+commands:
+  tab-complete: 0
+  log: true
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: false
+messages:
+  whitelist: You are not whitelisted on this server!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is full!
+  outdated-client: Outdated client! Please use {0}
+  outdated-server: Outdated server! I'm still on {0}
+  restart: Server is restarting
+stats:
+  disable-saving: false
+  forced-stats: {}
