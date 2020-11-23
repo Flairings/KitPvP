@@ -1,0 +1,11 @@
+# This file should not need modification by the user
+team:
+  c72796a2-4553-4b1a-af30-806654950f9f:
+    name: tedt
+    description: ''
+    open: false
+    home: ''
+    players:
+    - 0ecf6aa0-857c-4249-bd17-ea6873f9a942,OWNER
+teams:
+- c72796a2-4553-4b1a-af30-806654950f9f

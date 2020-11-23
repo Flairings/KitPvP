@@ -2,17 +2,14 @@ package me.flairings.kitpvp;
 
 import me.flairings.kitpvp.api.InventoryHandler;
 import me.flairings.kitpvp.api.UtilConfig;
-import me.flairings.kitpvp.commands.ProfileCommand;
-import me.flairings.kitpvp.commands.BuildCommand;
-import me.flairings.kitpvp.commands.HowToPlayCommand;
-import me.flairings.kitpvp.commands.KitPvPCommand;
-import me.flairings.kitpvp.commands.ReloadCommand;
-import me.flairings.kitpvp.commands.StatsCommand;
-import me.flairings.kitpvp.commands.KillRewardsCommand;
+import me.flairings.kitpvp.commands.*;
 import me.flairings.kitpvp.events.BlockEvents;
 import me.flairings.kitpvp.events.DeathEvent;
 import me.flairings.kitpvp.events.JoinEvents;
 import me.flairings.kitpvp.events.KillRewardsEvent;
+import me.flairings.kitpvp.scoreboard.Scoreboard;
+import me.flairings.kitpvp.scoreboard.api.Assemble;
+import me.flairings.kitpvp.scoreboard.api.AssembleStyle;
 import me.flairings.kitpvp.ui.HowToPlayUI;
 import me.flairings.kitpvp.utils.CC;
 import org.bukkit.Bukkit;
@@ -42,9 +39,10 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        loadScoreboard();
         loadEngine();
-        EventRegister();
-        CommandRegister();
+        loadEvents();
+        loadCommands();
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("          &6KitPvP &fhas been &aenabled"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
@@ -52,7 +50,6 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.translate("&6&lKitPvP &7| &f" + Main.getInstance().getDescription().getCommands().size() + " &6commands have been registered."));
 
     }
-
     public void loadEngine() {
         instance = this;
         playerlist = new ArrayList<>();
@@ -61,7 +58,13 @@ public class Main extends JavaPlugin {
         this.createYML();
     }
 
-    public void CommandRegister() {
+    public void loadScoreboard() {
+        Assemble assemble = new Assemble(this, new Scoreboard());
+        assemble.setTicks(2);
+        assemble.setAssembleStyle(AssembleStyle.MODERN);
+    }
+
+    public void loadCommands() {
         // staff commands
         new BuildCommand();
         new KitPvPCommand(this);
@@ -78,7 +81,7 @@ public class Main extends JavaPlugin {
         new ProfileCommand(this);
     }
 
-    public void EventRegister() {
+    public void loadEvents() {
         PluginManager pm = getPluginManager();
         pm.registerEvents(new KillRewardsEvent(), this);
         pm.registerEvents(new BlockEvents(), this);

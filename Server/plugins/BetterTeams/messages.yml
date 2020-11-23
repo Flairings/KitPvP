@@ -1,0 +1,116 @@
+# general errors
+invalidArg: '&4Invalid Arguments, help'
+inTeam: '&4You must be in a team to do that'
+notInTeam: '&4You must leave your team before doing that'
+needOwner: '&4You must be the owner of the team to do that'
+needAdmin: '&4You must be admin or owner of the team to do that'
+needPlayer: '&4You must be a player to do that'
+noPlayer: '&4Specified player not found'
+notTeam: '&6&4That team does not exist try &b/team create <name>'
+needSameTeam: '&6You are not in the same team as that person'
+noPerm: '&4You do not have permission to do that'
+version: 3
+placeholder:
+  noTeam: ''
+  noDescription: ''
+create:
+  exists: '&6That team already exists'
+  success: '&6Your team has been created'
+  banned: '&4That team name is banned'
+  maxLength: '&4That team name is too long'
+leave:
+  success: '&6You have left the team'
+  lastOwner: '&6You are the only owner rank within the team, Either promote someone
+    else or use &b/team disband &6to disband the team'
+disband:
+  success: '&6You have disbanded the team'
+  confirm: '&6Type &b/team disband &6again to confirm'
+description:
+  success: '&6You have changed the team description'
+  view: '&6Team Description: %s'
+  noDesc: '&6No team description set'
+name:
+  success: '&6You have changed the team name'
+  view: '&6Team name: %s'
+  exists: '&4That team already exists'
+invite:
+  success: '&6That player has been invited'
+  invite: '&6You have been invited to join team %s do &b/team join <team> &6 to join
+    the team'
+  inTeam: '&6That player is already in a team'
+  banned: '&6That player is banned from your team'
+  full: '&6Your team is maximum size, kick someone out before inviting more pople'
+join:
+  success: '&6You have joined that team'
+  notify: '&6Welcome &b%s &6to the team!'
+  notInvited: '&6&4You have not been invited to that team'
+  banned: '&6&4You are banned from that team'
+  full: '&4That team is full'
+open:
+  successopen: '&6Your team now open to everyone'
+  successclose: '&6Your team is now invite only'
+info:
+  needTeam: '&6No team or player found under that name'
+  name: '&6Name: &b%s'
+  description: '&6Description: &b%s'
+  open: '&6Open: &b%s'
+  owner: '&6Owners: &b%s'
+  admin: '&6Admins: &b%s'
+  default: '&6Users: &b%s'
+  fail: '&6No team or player found under that name'
+kick:
+  success: '&6That player has been kicked'
+  notify: '&6You have been kicked from team %s'
+  noPerm: '&6You do not have permission to kick that person'
+ban:
+  success: '&6That player has been banned'
+  notify: '&6You have been banned from team %s'
+  noPerm: '&6You do not have permission to ban that person'
+  already: '&6That player is already banned'
+unban:
+  success: '&6That player has been unbanned'
+  notify: '&6You have been unbanned from team %s'
+  noPerm: '&6You do not have permission to unban that person'
+  not: '&6That player is not banned'
+promote:
+  success: '&6That player has been promoted'
+  noPerm: '&6You do not have permissions to promote that person'
+  max: '&6That person is already promoted to the max!'
+  notify: '&6You have been promoted!'
+demote:
+  success: '&6That player has been demoted'
+  noPerm: '&6You do not have permissions to demote that person'
+  min: '&6That person is already the lowest rank'
+  notify: '&6You have been demoted'
+  lastOwner: '&6You cannot demote the final owner, promote someone else first'
+home:
+  success: '&6You have been teleported'
+  noHome: '&6Your team has not set a home'
+sethome:
+  success: '&6Your team home has been set'
+  noPerm: '&6Your are not a high enough rank to set your team home'
+chat:
+  enabled: '&6Your messages now go to the team chat'
+  disabled: '&6Your messages now go to the global chat'
+  syntax: '&6&b[Team]&f%s: %s'
+admin:
+  config:
+    reload: '&6BetterTeams has been reloaded'
+help:
+  description: View and change your team's description
+  ban: Bans the specified player from your team
+  home: Teleports you to your team's home
+  help: View this help page
+  promote: Demote the specified player within your team
+  unban: Unbans the specified player from your team
+  kick: Kick that player from your team
+  leave: Leave your current team
+  chat: Send a message only to your team
+  name: View and change your team's name
+  sethome: Sets your team's home
+  create: Create a team with the specified name
+  invite: Invite the specified player to your team
+  disband: Disband your current team
+  open: Toggle if the team is invite only
+  info: View information about the specified player / team
+  join: Join the specified team

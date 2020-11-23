@@ -1,0 +1,13 @@
+MONGODB:
+  ADDRESS: bduj47tl1i9w5rm-mongodb.services.clever-cloud.com
+  PORT: 27017
+  DATABASE: bduj47tl1i9w5rm
+  AUTHENTICATION:
+    ENABLED: true
+    USERNAME: udkjgp8f14wostt1rdpk
+    PASSWORD: T2RwDMmKTRrV2ibsy1Wm
+    DATABASE: bduj47tl1i9w5rm
+REDIS:
+  HOST: ""
+  PORT: 6379
+  PASSWORD: ""

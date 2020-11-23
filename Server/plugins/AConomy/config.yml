@@ -1,0 +1,103 @@
+#=====================================================================================\
+#                                                                                    ||
+# AConomy Made by Abcik                                                              ||
+# Version 2.3                                                                        ||
+# A very simple plugin on the economy with the support of the vault,                 ||
+# MYSQL and local playerdata. Attention! To AConomy works you need a vault plugin.   ||
+#                                                                                    ||
+#=====================================================================================/
+
+#aconomy.balance         - For /money
+#aconomy.balance.other   - For /money check [player]
+#aconomy.help            - For /money help
+#aconomy.top             - For /money top
+#aconomy.pay             - For /money pay [player] [amount]
+#aconomy.admin           - For /money (give|take|set|reload)
+
+#Players initial balance
+StartingBalance: 0.0
+
+#Format of money.
+#Available Formats:
+# 1 - "1"
+# 2 - "1.5"
+# 3 - "1.45"
+MoneyFormat: 3
+
+#Top update time
+#In minutes
+TopUpdate: 720
+
+#Top size
+#min=1; max=20;
+#The number of people that will be visible in the top.
+TopSize: 1
+
+#If false date will use nickname.
+#If true data will use UUID.
+#It is recommended to set the same as the server.
+OnlineMode: true
+
+#MYSQL settings
+#To change Mysql settings you must restart server completely.
+Mysql:
+  Enabled: false
+  Host: 'localhost'
+  Port: '3306'
+  Username: 'root'
+  Password: 'Password'
+  Database: 'Database'
+
+#Messages settings
+Messages:
+
+  OnlyForPlayers: '&d&lAConomy &cOnly for players!'
+  NotEnoughForTop: '&d&lAConomy &cNot enough players to make a top!'
+  TopNull: '&d&lAConomy &cTop is updating... Wait!'
+  NoAccount: '&d&lAConomy &c%player% has not account!'
+  NotEnoughMoney: '&d&lAConomy &cNot enough money!'
+  NoPermissions: '&d&lAConomy &cYou dont have permissions to this!'
+  
+  HelpPlayer:
+    - '&d&lAConomy &ePlayer help:'
+    - '&7/money &fCheck your balance.'
+    - '&7/money help &fShow this message.'
+    - '&7/money top &fShow top players.'
+    - '&7/money check [player] &fCheck player balance.'
+    - '&7/money pay [player] [amount] &fPay your money to other player.'
+
+  HelpAdmin: 
+    - '&d&lAConomy &eAdmin help:'
+    - '&7/money &fCheck your balance.'
+    - '&7/money help &fShow this message.'
+    - '&7/money top &fShow top players.'
+    - '&7/money check [player] &fCheck player balance.'
+    - '&7/money pay [player] [amount] &fPay your money to other player.'
+    - '&7/money give [player] [amount] &fGive money to player.'
+    - '&7/money take [player] [amount] &fTake money from player.'
+    - '&7/money set [player] [amount] &fSet balance to player.'
+    - '&7/money reload &fReload the config.'
+
+  TopStructure: '&f%place%. &e%player% &f- &e%balance%'
+
+  YourBalance: '&d&lAConomy &fYour balance: %balance%'
+  OtherBalance: '&d&lAConomy &fplayer %other% has %balance%'
+
+  PayUsage: '&d&lAConomy &fUse: /money pay [player]'
+  PayToMyself: '&d&lAConomy &fYou transferred money from one pocket to another.'
+  PaySend: '&d&lAConomy &fYou payed %summ% to %receiving%.'
+  PayReceive: '&d&lAConomy &fYou receive %summ% from %sender%.'
+
+  ReloadedSuccessfully: '&d&lAConomy &fReloaded successful!'
+
+  CheckUsage: '&d&lAConomy &fUse: /money check [player]'
+
+  GiveUsage: '&d&lAConomy &fUse: /money give [player] [amount]'
+  GiveSuccessfully: '&d&lAConomy &fMoney Gived!'
+
+  TakeUsage: '&d&lAConomy &fUse: /money take [player] [amount]'
+  TakeSuccessfully: '&d&lAConomy &fMoney taked!'
+  TakeNotEnoughMoney: '&d&lAConomy &fPlayer has not enough money'
+
+  SetUsage: '&d&lAConomy &fUse: /money set [player] [amount]'
+  SetSuccessfully: '&d&lAConomy &fMoney set!'
