@@ -17,17 +17,17 @@ public class BuildCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player player = (Player) sender;
         if (!(sender instanceof Player)) {
-            sender.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Player-Only-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            sender.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Player-Only-Message")));
         }
         if (!player.hasPermission("kitpvp.command.build")) {
-            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("No-Permissions-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("No-Permissions-Message")));
             return true;
         }
         if (Main.playerlist.contains(player.getUniqueId())) {
-            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Build-Disabled-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Build-Disabled-Message")));
             Main.playerlist.remove(player.getUniqueId());
         } else {
-            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Build-Enabled-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Build-Enabled-Message")));
             Main.playerlist.add(player.getUniqueId());
         }
         return false;

@@ -1,52 +1,50 @@
 # KitPvP - 1.0
 
-# ** Prefix **
-# {PREFIX}
-Prefix: "&d&lUnoPvP &7┃"
-
 # ** Messages **
-No-Permissions-Message: "{PREFIX} &cYou do not have permissions"
-Reloaded-Message: "{PREFIX} &fKitPvP has been reloaded."
-OnBlockPlace-Message: "{PREFIX} &7&oYou have build mode disabled."
-OnBlockBreak-Message: "{PREFIX} &7&oYou have build mode disabled."
-Build-Enabled-Message: "{PREFIX} &fYou have &aenabled &fbuild mode."
-Build-Disabled-Message: "{PREFIX} &fYou have &cdisabled &fbuild mode."
+No-Permissions-Message: "&d&lUnoPvP &7┃ &cYou do not have permissions"
+Reloaded-Message: "&d&lUnoPvP &7┃ &fKitPvP has been reloaded."
+OnBlockPlace-Message: "&d&lUnoPvP &7┃ &7&oYou have build mode disabled."
+OnBlockBreak-Message: "&d&lUnoPvP &7┃ &7&oYou have build mode disabled."
+Build-Enabled-Message: "&d&lUnoPvP &7┃ &fYou have &aenabled &fbuild mode."
+Build-Disabled-Message: "&d&lUnoPvP &7┃ &fYou have &cdisabled &fbuild mode."
 Player-Only-Message: "&cConsole may not use this command."
-player-kill-player-message: "&e{KILLER} &chas killed &e{VICTIM}"
-death-message: "&e{VICTIM} &chas died"
 
 # ** Join Messages **
+# (DOES NOT SUPPORT PLACEHOLDERAPI)
 join-events:
   sound-enabled: true
   messages:
     - ""
-    - "&6You're now connected to our &6&lKitPvP &6server"
+    - "&fYou're now connected to our &d&lKitPvP &fserver"
     - "&7&oThe map began on the 1st of December."
     - ""
 
 # ** Kill rewards **
-kill-rewards:
-  sound-enabled: true
+# (DOES NOT SUPPORT PLACEHOLDERAPI)
+kd-events:
+  kill-sound-enabled: true
   xp-amount: 3
+  death-message: "&e{VICTIM} &chas died"
+  kill-message: "&e{KILLER} &chas killed &e{VICTIM}"
   commands:
-    - crate key {PLAYER} Kill 1
-    - eco give {PLAYER} 100
-  message: "{PREFIX} &aYou have been given 100$ for killing {PLAYER}"
+    - crate key {KILLER} Kill 1
+    - eco give {KILLER} 100
+    - eco TAKE {VICTIM} 50
+  killer-messages:
+  - "&d&lUnoPvP &7┃ &aYou have been given 100$ for killing {VICTIM}"
+  victim-messages:
+  - "&d&lUnoPvP &7┃ &dYou have lost 50$ for dying to {KILLER}"
 
-# Placeholders
-# {XP}
-# {CMDs}
+# Placeholders - {XP} {CMDs}
+# (DOES NOT SUPPORT PLACEHOLDERAPI)
 kill-rewards-help:
   message:
-    - "&6Current kill reward settings: "
-    - "&6XP: &f{XP}"
-    - "&6CMDs: &f{CMDs}"
-
+    - "&dCurrent kill reward settings: "
+    - "&dXP: &f{XP}"
+    - "&dCMDs: &f{CMDs}"
 
 # ** Stats **
-# Placeholders
-# {Kills}
-# {Deaths}
+# (DOES NOT SUPPORT PLACEHOLDERAPI)
 stats:
   message:
     - "&7&m---------------------------"
@@ -63,7 +61,21 @@ stats-other:
     - " &fDeaths&7: &d{DEATHS}"
     - "&7&m---------------------------"
 
+# ** Scoreboard **
+# (SUPPORTS PLACEHOLDERAPI)
+Scoreboard:
+  Default:
+    - "&7&m-------------------------"
+    - "&fRank: &r%aqua_player_rank%"
+    - "&fKills: &d%statistic_player_kills%"
+    - "&fDeaths: &d%statistic_deaths%"
+    - "&fBalance: &d%vault_eco_balance_fixed%$"
+    - "&7&m-------------------------"
+    - "&fTeam: &d%betterTeams_name%"
+    - "&7&m-------------------------"
+
 # ** Help UI **
+# (DOES NOT SUPPORT PLACEHOLDERAPI)
 items:
   kitpvp:
     title: '&dKitPvP Commands'
@@ -91,23 +103,3 @@ items:
       - '&8* &d/money check <name> &8&m-&f See the balance of others'
       - '&8* &d/money top &8&m-&f See the players with the highest balance.'
       - ''
-
-# ** Scoreboard **
-
-# Placeholders
-# {RANK} - Aquacore Rank name with color
-# {KILLS} - Bukkit Statistic (Player_Kills)
-# {DEATHS} - Bukkit Statistic (Deaths)
-# {BALANCE} - Vault Balance
-# {TEAM} - Better-Teams team name
-
-Scoreboard:
-  Default:
-    - "&7&m-------------------------"
-    - "&fRank: &r%aqua_player_rank%"
-    - "&fKills: &d%statistic_player_kills%"
-    - "&fDeaths: &d%statistic_deaths%"
-    - "&fBalance: &d%vault_eco_balance_fixed%$"
-    - "&7&m-------------------------"
-    - "&fTeam: &d%betterTeams_name%"
-    - "&7&m-------------------------"

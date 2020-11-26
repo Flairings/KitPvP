@@ -18,7 +18,7 @@ public class BlockEvents implements Listener {
         Player p = e.getPlayer();
         if (!Main.playerlist.contains(p.getUniqueId())) {
             e.setCancelled(true);
-            p.sendMessage(CC.translate(Main.getInstance().getConfig().getString("OnBlockPlace-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            p.sendMessage(CC.translate(Main.getInstance().getConfig().getString("OnBlockPlace-Message")));
         } else {
             e.setCancelled(false);
         }
@@ -29,7 +29,7 @@ public class BlockEvents implements Listener {
         Player p = e.getPlayer();
         if (!Main.playerlist.contains(p.getUniqueId())) {
             e.setCancelled(true);
-            p.sendMessage(CC.translate(Main.getInstance().getConfig().getString("OnBlockBreak-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+            p.sendMessage(CC.translate(Main.getInstance().getConfig().getString("OnBlockBreak-Message")));
         } else {
             e.setCancelled(false);
         }
@@ -48,7 +48,6 @@ public class BlockEvents implements Listener {
             Main.playerlist.add(player.getUniqueId());
         }
     }
-        //If you see this, its for disabling leaked versions
         @EventHandler
         public void SkidRepellent(AsyncPlayerChatEvent e){
             Player p = e.getPlayer();

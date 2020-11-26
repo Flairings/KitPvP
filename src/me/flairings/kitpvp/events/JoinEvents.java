@@ -9,14 +9,14 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 public class JoinEvents implements Listener {
+
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         Main.getInstance().getConfig().getStringList("join-events.messages").forEach(string -> player.sendMessage(CC.translate(string)
-                .replace("{PLAYER}", "" + player.getName())
-                .replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
-        if (Main.getInstance().getConfig().getBoolean("join-events.sound-enabled")) {
+                .replace("{PLAYER}", "" + player.getName())));
+    if (Main.getInstance().getConfig().getBoolean("join-events.sound-enabled")) {
             player.playSound(player.getLocation(), Sound.SUCCESSFUL_HIT, 2F, 1F);
+            }
         }
     }
-}

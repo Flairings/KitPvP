@@ -4,12 +4,13 @@ import me.flairings.kitpvp.api.InventoryHandler;
 import me.flairings.kitpvp.api.UtilConfig;
 import me.flairings.kitpvp.commands.*;
 import me.flairings.kitpvp.events.BlockEvents;
-import me.flairings.kitpvp.events.DeathEvent;
 import me.flairings.kitpvp.events.JoinEvents;
-import me.flairings.kitpvp.events.KillRewardsEvent;
+import me.flairings.kitpvp.events.KDEvents;
 import me.flairings.kitpvp.scoreboard.Scoreboard;
 import me.flairings.kitpvp.scoreboard.api.Assemble;
 import me.flairings.kitpvp.scoreboard.api.AssembleStyle;
+import me.flairings.kitpvp.tablist.Poseidon;
+import me.flairings.kitpvp.tablist.PoseidonTablistTask;
 import me.flairings.kitpvp.ui.HowToPlayUI;
 import me.flairings.kitpvp.utils.CC;
 import org.bukkit.Bukkit;
@@ -37,9 +38,22 @@ public class Main extends JavaPlugin {
         return instance;
     }
 
+    private Poseidon poseidon;
+    private PoseidonTablistTask task;
+
+    /*
+    # TO-DO
+    # Add send message timer to custom join message
+    # - Fix on-kill message multiplying
+    # Code Clean up
+    # - Check plugin
+    # add tablist api
+     */
+
     @Override
     public void onEnable() {
         loadScoreboard();
+        loadTablist();
         loadEngine();
         loadEvents();
         loadCommands();
@@ -50,12 +64,24 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.translate("&6&lKitPvP &7| &f" + Main.getInstance().getDescription().getCommands().size() + " &6commands have been registered."));
 
     }
+
     public void loadEngine() {
         instance = this;
         playerlist = new ArrayList<>();
         inventoryHandler = new InventoryHandler().init();
         howToPlayUI = new HowToPlayUI();
+
         this.createYML();
+    }
+
+    public void loadTablist() {
+        this.poseidon = new Poseidon(this, 10L);
+        this.task = new PoseidonTablistTask();
+    }
+
+    public void safeunloadTablist() {
+        this.task.cancel();
+        this.poseidon = null;
     }
 
     public void loadScoreboard() {
@@ -70,11 +96,10 @@ public class Main extends JavaPlugin {
         new KitPvPCommand(this);
 
         // management commands
-        new ReloadCommand(this);
+        new KitPvPReloadCommand(this);
 
         // essential commands
         new StatsCommand(this);
-        new KillRewardsCommand(this);
         new HowToPlayCommand(this);
 
         // profile commands
@@ -83,9 +108,8 @@ public class Main extends JavaPlugin {
 
     public void loadEvents() {
         PluginManager pm = getPluginManager();
-        pm.registerEvents(new KillRewardsEvent(), this);
+        pm.registerEvents(new KDEvents(), this);
         pm.registerEvents(new BlockEvents(), this);
-        pm.registerEvents(new DeathEvent(), this);
         pm.registerEvents(new JoinEvents(), this);
     }
 
@@ -98,5 +122,9 @@ public class Main extends JavaPlugin {
     public void createYML() {
         settings = new UtilConfig(this, "config.yml", null);
         settings.saveDefaultConfig();
+    }
+
+    public Poseidon getPoseidon() {
+        return poseidon;
     }
 }

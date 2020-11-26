@@ -9,32 +9,6 @@
 
 config-version: 9
 data-value-allowed-items: []
-warnWhenSettingExcessiveVelocity: true
-settings:
-  limit-player-interactions: true
-  baby-zombie-movement-speed: 0.5
-  debug: false
-  save-user-cache-on-stop-only: false
-  player-shuffle: 0
-  sample-count: 12
-  int-cache-limit: 1024
-  late-bind: false
-  user-cache-size: 1000
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  bungeecord: false
-  netty-threads: 4
-  attribute:
-    maxHealth:
-      max: 2048.0
-    movementSpeed:
-      max: 2048.0
-    attackDamage:
-      max: 2048.0
-  moved-wrongly-threshold: 0.0625
-  filter-creative-items: true
-  moved-too-quickly-threshold: 100.0
 stackable-buckets:
   lava: false
   water: false
@@ -42,29 +16,54 @@ stackable-buckets:
 effect-modifiers:
   strength: 1.3
   weakness: -0.5
+settings:
+  baby-zombie-movement-speed: 0.5
+  limit-player-interactions: true
+  debug: false
+  save-user-cache-on-stop-only: false
+  filter-creative-items: true
+  moved-too-quickly-threshold: 100.0
+  moved-wrongly-threshold: 0.0625
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  player-shuffle: 0
+  sample-count: 12
+  late-bind: false
+  int-cache-limit: 1024
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+  bungeecord: false
+  user-cache-size: 1000
+  netty-threads: 4
+warnWhenSettingExcessiveVelocity: true
 world-settings:
   default:
     verbose: true
-    nether-ceiling-void-damage: false
-    max-growth-height:
-      cactus: 3
-      reeds: 3
-    player-blocking-damage-multiplier: 0.5
-    falling-block-height-nerf: 0
-    tnt-explosion-volume: 4.0
-    optimize-explosions: false
-    mob-spawner-tick-rate: 1
-    water-over-lava-flow-speed: 5
-    tnt-entity-height-nerf: 0
     disable-explosion-knockback: false
     fix-cannons: false
-    use-hopper-check: false
+    water-over-lava-flow-speed: 5
+    tnt-entity-height-nerf: 0
+    portal-search-radius: 128
+    disable-ice-and-snow: false
+    game-mechanics:
+      disable-end-credits: false
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: false
+    container-update-tick-rate: 1
+    falling-blocks-collide-with-signs: false
+    keep-spawn-loaded: true
+    disable-mood-sounds: false
     use-async-lighting: false
+    disable-thunder: false
     tick-next-tick-list-cap: 10000
     tick-next-tick-list-cap-ignores-redstone: false
-    disable-thunder: false
-    all-chunks-are-slime-chunks: false
-    allow-undead-horse-leashing: false
     generator-settings:
       canyon: true
       caves: true
@@ -77,23 +76,21 @@ world-settings:
       village: true
       flat-bedrock: false
     allow-block-location-tab-completion: true
-    disable-ice-and-snow: false
-    portal-search-radius: 128
-    container-update-tick-rate: 1
-    game-mechanics:
-      disable-end-credits: false
-      boats-drop-boats: false
-      disable-player-crits: false
-      disable-chest-cat-detection: false
-    keep-spawn-loaded: true
-    falling-blocks-collide-with-signs: false
-    disable-mood-sounds: false
+    all-chunks-are-slime-chunks: false
+    allow-undead-horse-leashing: false
+    use-hopper-check: false
     disable-teleportation-suffocation-check: false
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
-    despawn-ranges:
-      soft: 32
-      hard: 128
+    nether-ceiling-void-damage: false
+    falling-block-height-nerf: 0
+    tnt-explosion-volume: 4.0
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    mob-spawner-tick-rate: 1
+    player-blocking-damage-multiplier: 0.5
+    optimize-explosions: false
     fast-drain:
       lava: false
       water: false
@@ -101,13 +98,16 @@ world-settings:
       enderpearls: true
       tnt-entities: true
       falling-blocks: true
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    despawn-ranges:
+      soft: 32
+      hard: 128
     load-chunks:
       enderpearls: false
       tnt-entities: false
       falling-blocks: false
-    squid-spawn-height:
-      minimum: 45.0
-      maximum: 63.0
     player-exhaustion:
       block-break: 0.02500000037252903
       swimming: 0.014999999664723873
@@ -119,15 +119,15 @@ world-settings:
       nether: 10
 commands:
   tab-complete: 0
-  spam-exclusions:
-  - /skill
+  silent-commandblock-console: false
+  log: true
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
-  log: true
-  silent-commandblock-console: false
+  spam-exclusions:
+  - /skill
 timings:
   enabled: true
   verbose: true

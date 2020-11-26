@@ -1,12 +1,9 @@
 name: KitPvP
-version: 1.0
+version: 1.0-UNSTABLE
 authors: [Flairings, Pottinqq]
 main: me.flairings.kitpvp.Main
 description: KitPvP core for UnoPvP.
-softdepend:
-  - AquaCore
-  - BetterTeams
-
+softdepend: [BetterTeams, AquaCore]
 depend: [PlaceholderAPI]
 
 commands:

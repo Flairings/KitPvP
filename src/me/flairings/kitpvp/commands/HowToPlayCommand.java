@@ -18,7 +18,7 @@ public class HowToPlayCommand implements CommandExecutor {
         Player player = (Player) sender;
         if (args.length < 1) {
             if (!player.hasPermission("kitpvp.command.howtoplay")) {
-                player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("No-Permissions-Message").replace("{PREFIX}", "" + (CC.translate(Main.getInstance().getConfig().getString("Prefix"))))));
+                player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("No-Permissions-Message")));
                 return true;
             } else {
                 Main.howToPlayUI.open(player);

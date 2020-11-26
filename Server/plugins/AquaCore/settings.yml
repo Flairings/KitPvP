@@ -97,7 +97,7 @@ media:
   teamspeak: ts.aquacore.net
   twitter: https://twitter.com/aquacore
 join-message:
-  enabled: true
+  enabled: false
   message:
   - '&8&m-----------------------------------'
   - '          &eWelcome to &b<server>&7, &3<name>'
@@ -110,7 +110,7 @@ join-message:
   - '&eYour current rank is &f<rank>&e!'
   - '&8&m-----------------------------------'
 on-join:
-  clear-chat: true
+  clear-chat: false
   show-default-message: false
   teleport:
     enabled: true

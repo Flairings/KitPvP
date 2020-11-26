@@ -26,8 +26,8 @@ public class StatsCommand implements CommandExecutor {
             Player target = Bukkit.getPlayer(args[0]);
             Main.getInstance().getConfig().getStringList("stats-other.message").forEach(string -> sender.sendMessage(CC.translate(string)
                     .replace("{PLAYER}", "" + target.getDisplayName())
-                    .replace("{KILLS}", "" + player.getStatistic(Statistic.PLAYER_KILLS))
-                    .replace("{DEATHS}", "" + player.getStatistic(Statistic.DEATHS))));
+                    .replace("{KILLS}", "" + target.getStatistic(Statistic.PLAYER_KILLS))
+                    .replace("{DEATHS}", "" + target.getStatistic(Statistic.DEATHS))));
         }
         return false;
     }
