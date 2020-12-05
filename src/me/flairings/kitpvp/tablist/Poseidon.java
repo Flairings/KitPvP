@@ -13,7 +13,7 @@ public final class Poseidon {
     private final JavaPlugin plugin;
     private final TablistKeyGenerator tablistKeyGenerator;
     private final TablistManager tablistManager;
-    private TablistTask tablistTask;
+    private final TablistTask tablistTask;
 
     public Poseidon(JavaPlugin plugin, long period) {
         Preconditions.checkNotNull(plugin, "JavaPlugin cannot be null");

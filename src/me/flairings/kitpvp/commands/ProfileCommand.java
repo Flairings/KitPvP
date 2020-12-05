@@ -14,6 +14,7 @@ public class ProfileCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        // lmao been "in development" for like 2 weeks.
         commandSender.sendMessage(CC.translate("&cThis command is currently in development."));
         return false;
     }

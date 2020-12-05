@@ -19,16 +19,12 @@ commands:
     description: How To Play GUI
     aliases:
       - help
-      - htp
-      - howtonotbeshitatthegame101lol
   build:
     description: Enable and Disable breaking & placing blocks.
     aliases:
       - buildmode
   kitpvp-reload:
     description: Safely reloads the kitpvp core.
-  killrewards:
-    description: View the current kill reward settings
   profile:
     description: Change a users profile settings
 
@@ -60,5 +56,5 @@ permissions:
   kitpvp.helpcommand.killrewards:
     description: This permission allows the user to view the current kill reward settings
 
-  kitpvp.command.killrewards:
-    description: This permission allows the user to view the current kill reward settings
+  kitpvp.command.stats:
+    description: View the stats

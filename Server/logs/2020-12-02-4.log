@@ -1,0 +1,395 @@
+[19:16:07] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[19:16:07] [Server thread/INFO]: Loading properties
+[19:16:07] [Server thread/INFO]: Default game type: SURVIVAL
+[19:16:08] [Server thread/INFO]: This server is running FoxSpigot version 1.8.8-R0.1-SNAPSHOT (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[19:16:08] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[19:16:08] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:16:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:16:08] [Server thread/INFO]: Debug logging is disabled
+[19:16:08] [Server thread/INFO]: Data value allowed items: 
+[19:16:08] [Server thread/INFO]: Generating keypair
+[19:16:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:16:08] [Server thread/INFO]: Using default channel type
+[19:16:08] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[19:16:08] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[19:16:08] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[19:16:08] [Server thread/INFO]: [ProtocolSupport] Loading ProtocolSupport v4.23.dev
+[19:16:08] [Server thread/INFO]: [ProtocolSupport] Allocator: PooledByteBufAllocator(directByDefault: true), direct: true
+[19:16:08] [Server thread/INFO]: [ProtocolSupport] Compression level: 3
+[19:16:09] [Server thread/INFO]: [ProtocolSupport] Assume 1.5.2 ping delay: 100
+[19:16:09] [Server thread/INFO]: [ProtocolSupport] Assume legacy ping dealy: 200
+[19:16:09] [Server thread/INFO]: [ProtocolSupport] Login threads max count: 8, keep alive time: 60
+[19:16:09] [Server thread/WARN]: [ProtocolSupport] Native transport is enabled, this may causes issues. Disable it by setting use-native-transport in server.properties to false.
+[19:16:09] [Server thread/INFO]: [ProtocolSupport] Using injected ServerConnection
+[19:16:09] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.4
+[19:16:09] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.5.0
+[19:16:09] [Server thread/INFO]: [AquaCore] Loading AquaCore v2.1.2
+[19:16:09] [Server thread/INFO]: [BetterTeams] Loading BetterTeams v3.0.3
+[19:16:09] [Server thread/INFO]: [AConomy] Loading AConomy v2.3
+[19:16:09] [Server thread/INFO]: [Hub] Loading Hub v1.0-STABLE
+[19:16:09] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[19:16:09] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[19:16:09] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[19:16:09] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[19:16:09] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[19:16:09] [Server thread/INFO]: [ProtocolSupport] Enabling ProtocolSupport v4.23.dev
+[19:16:09] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.5.0
+[19:16:09] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[19:16:09] [Server thread/INFO]: [AConomy] Enabling AConomy v2.3
+[19:16:09] [Server thread/INFO]: [0;37;22m============================[m
+[19:16:09] [Server thread/INFO]: [0;36;1mAConomy [0;32;1mEnabled![m
+[19:16:09] [Server thread/INFO]: [0;36;1mVersion: [0;32;1m2.3[m
+[19:16:09] [Server thread/INFO]: [0;36;1mAuthor: [0;32;1mAbcik[m
+[19:16:09] [Server thread/INFO]: [0;37;22m============================[m
+[19:16:09] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[19:16:09] [Server thread/INFO]: Preparing level "world"
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:16:09] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:16:09] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:16:09] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:16:09] [Server thread/INFO]: View Distance: 10
+[19:16:09] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:16:09] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:16:09] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[19:16:09] [Server thread/INFO]: Clear tick list: false
+[19:16:09] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:16:09] [Server thread/INFO]: Max TNT Explosions: 100
+[19:16:09] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:16:09] [Server thread/INFO]: Random Lighting Updates: false
+[19:16:09] [Server thread/INFO]: Sending up to 10 chunks per packet
+[19:16:09] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[19:16:09] [Server thread/INFO]: Structure Info Saving: true
+[19:16:09] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[19:16:09] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:16:09] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:16:09] [Server thread/INFO]: Anti X-Ray: true
+[19:16:09] [Server thread/INFO]: 	Engine Mode: 1
+[19:16:09] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[19:16:09] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[19:16:09] [Server thread/INFO]: Mob Spawn Range: 4
+[19:16:09] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Max Entity Collisions: 8
+[19:16:09] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:16:09] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[19:16:09] [Server thread/INFO]: Water over lava flow speed: 5
+[19:16:09] [Server thread/INFO]: Fix TNT cannons: false
+[19:16:09] [Server thread/INFO]: World async lighting: false
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[19:16:09] [Server thread/INFO]: Keep spawn chunk loaded: true
+[19:16:09] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[19:16:09] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[19:16:09] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[19:16:09] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[19:16:09] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[19:16:09] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:16:09] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:16:09] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:16:09] [Server thread/INFO]: View Distance: 10
+[19:16:09] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:16:09] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:16:09] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[19:16:09] [Server thread/INFO]: Clear tick list: false
+[19:16:09] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:16:09] [Server thread/INFO]: Max TNT Explosions: 100
+[19:16:09] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:16:09] [Server thread/INFO]: Random Lighting Updates: false
+[19:16:09] [Server thread/INFO]: Sending up to 10 chunks per packet
+[19:16:09] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[19:16:09] [Server thread/INFO]: Structure Info Saving: true
+[19:16:09] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[19:16:09] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:16:09] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:16:09] [Server thread/INFO]: Anti X-Ray: true
+[19:16:09] [Server thread/INFO]: 	Engine Mode: 1
+[19:16:09] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[19:16:09] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[19:16:09] [Server thread/INFO]: Mob Spawn Range: 4
+[19:16:09] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Max Entity Collisions: 8
+[19:16:09] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[19:16:09] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[19:16:09] [Server thread/INFO]: Water over lava flow speed: 5
+[19:16:09] [Server thread/INFO]: Fix TNT cannons: false
+[19:16:09] [Server thread/INFO]: World async lighting: false
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[19:16:09] [Server thread/INFO]: Keep spawn chunk loaded: true
+[19:16:09] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[19:16:09] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[19:16:09] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[19:16:09] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[19:16:09] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[19:16:09] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:16:09] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:16:09] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:16:09] [Server thread/INFO]: View Distance: 10
+[19:16:09] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:16:09] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:16:09] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[19:16:09] [Server thread/INFO]: Clear tick list: false
+[19:16:09] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:16:09] [Server thread/INFO]: Max TNT Explosions: 100
+[19:16:09] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:16:09] [Server thread/INFO]: Random Lighting Updates: false
+[19:16:09] [Server thread/INFO]: Sending up to 10 chunks per packet
+[19:16:09] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[19:16:09] [Server thread/INFO]: Structure Info Saving: true
+[19:16:09] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[19:16:09] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:16:09] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:16:09] [Server thread/INFO]: Anti X-Ray: true
+[19:16:09] [Server thread/INFO]: 	Engine Mode: 1
+[19:16:09] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[19:16:09] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[19:16:09] [Server thread/INFO]: Mob Spawn Range: 4
+[19:16:09] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:16:09] [Server thread/INFO]: Max Entity Collisions: 8
+[19:16:09] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[19:16:09] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[19:16:09] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[19:16:09] [Server thread/INFO]: Water over lava flow speed: 5
+[19:16:09] [Server thread/INFO]: Fix TNT cannons: false
+[19:16:09] [Server thread/INFO]: World async lighting: false
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[19:16:09] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[19:16:09] [Server thread/INFO]: Keep spawn chunk loaded: true
+[19:16:09] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[19:16:09] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[19:16:09] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[19:16:09] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[19:16:09] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[19:16:09] [Server thread/INFO]: Preparing start region for level 0 (Seed: -7509525913685597218)
+[19:16:10] [Server thread/INFO]: Preparing start region for level 1 (Seed: -7509525913685597218)
+[19:16:11] [Server thread/INFO]: Preparing start region for level 2 (Seed: -7509525913685597218)
+[19:16:11] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[19:16:11] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[19:16:11] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[19:16:11] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[19:16:11] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[19:16:11] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.4
+[19:16:11] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:16:11] [Server thread/INFO]: [AquaCore] Enabling AquaCore v2.1.2
+[19:16:11] [Server thread/INFO]: [0;37;22m[[0;33;22mCore[0;37;22m] [0;31;1m[[0;31;1mLog[0;31;1m] [0;32;1mVault Provider successfully registered.[m
+[19:16:12] [Server thread/INFO]: Cluster created with settings {hosts=[bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[19:16:12] [cluster-ClusterId{value='5fc7e7fc773c6f1989804576', description='null'}-bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017/INFO]: Opened connection [connectionId{localValue:1, serverValue:5053419}] to bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017
+[19:16:12] [cluster-ClusterId{value='5fc7e7fc773c6f1989804576', description='null'}-bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017/INFO]: Monitor thread successfully connected to server with description ServerDescription{address=bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13864800, setName='rs0', canonicalAddress=n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017, hosts=[n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017, n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017], passives=[], arbiters=[n3-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017], primary='n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000048, setVersion=5, lastWriteDate=Wed Dec 02 19:16:12 GMT 2020, lastUpdateTimeNanos=12070617605200}
+[19:16:12] [Thread-8/WARN]: [PermissionsEx] The updater could not find any files for the project id 31279
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;33;22mCore[0;37;22m] [0;31;1m[[0;31;1mLog[0;31;1m] [0;37;22m[[0;33;22mCore[0;37;22m] [0;32;1mCould not connect to redis, synchronization won't work with other servers, you will still be able to use AquaCore normally on this server. [0;37;22m(Lobby)[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mGlobalPlayerUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mServerUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerAttachmentUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerPermissionUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mReportSave [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mGlobalBroadcastPermission [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerLeftFrozenPacket [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerMessage [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mServerAlert [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mServerCommand [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mServerStatusUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerPunishKick [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPlayerRemovePunishment [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mPunishmentExecute [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mGrantsUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mRankDelete [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mRankUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mStaffDisconnect [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mStaffJoin [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mStaffSwitch [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mAltUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mGlobalPlayerStatsUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mTagsUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mMaintenanceUpdate [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mPacket [0;36;1mTagsImport [0;33;1mhas been registered.[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;31;1mPacket[0;37;22m] [0;33;1mSuccessfully registered packets. [0;37;22m([0;36;1m25 total[0;37;22m)[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[[0;33;22mCore[0;37;22m] [0;31;1m[[0;31;1mLog[0;31;1m] [0;32;1mPlaceholder API expansion successfully registered.[m
+[19:16:14] [Server thread/INFO]: [0;31;1m==========[0;37;22m===============================[0;31;1m==========[m
+[19:16:14] [Server thread/INFO]: [0;33;1mAquaCore has been successfully loaded.[m
+[19:16:14] [Server thread/INFO]: [m
+[19:16:14] [Server thread/INFO]: [0;33;1mName[0;37;22m: [0;36;22mAquaCore[m
+[19:16:14] [Server thread/INFO]: [0;33;1mAuthor[0;37;22m: [0;36;22m[FaceSlap_/Activated_][m
+[19:16:14] [Server thread/INFO]:  [m
+[19:16:14] [Server thread/INFO]: [0;33;1mMongo[0;37;22m: [0;32;1m[0;32;1mEnabled[m
+[19:16:14] [Server thread/INFO]: [0;33;1mRedis[0;37;22m: [0;32;1m[0;31;1mDisabled[m
+[19:16:14] [Server thread/INFO]:  [m
+[19:16:14] [Server thread/INFO]: [0;33;1mYou're currently running [0;33;22mv2.1.2 [0;33;1mversion of [0;36;1mAquaCore[0;33;1m![m
+[19:16:14] [Server thread/INFO]: [0;31;1m==========[0;37;22m===============================[0;31;1m==========[m
+[19:16:14] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v3.0.3
+[19:16:14] [Server thread/INFO]: version = 1
+[19:16:14] [Server thread/INFO]: [Hub] Enabling Hub v1.0-STABLE
+[19:16:14] [Server thread/INFO]: [0;37;22m[9m----------------------------------[m
+[19:16:14] [Server thread/INFO]:        [0;34;1mHub [0;37;1mhas been [0;32;1menabled[m
+[19:16:14] [Server thread/INFO]: [0;37;22m[9m----------------------------------[m
+[19:16:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:16:14] [Server thread/INFO]: Done (5.288s)! For help, type "help" or "?"
+[19:16:14] [Server thread/INFO]: Timings Reset
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:16:14] [Craft Scheduler Thread - 1/INFO]: [Vault] Checking for Updates ... 
+[19:16:14] [Craft Scheduler Thread - 0/INFO]: [0;37;22m[[0;33;22mCore[0;37;22m] [0;37;22m[[0;31;22mServerManager[0;37;22m] [0;36;1mLobby [0;36;22mhas just came [0;32;1monline [0;36;1mand will be joinable in [0;36;1m5 seconds[0;36;22m![m
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.10.9) is available at:
+[19:16:14] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[19:16:14] [Craft Scheduler Thread - 4/INFO]: [PlaceholderAPI] 180 placeholder expansions are available on the cloud.
+[19:16:14] [Craft Scheduler Thread - 4/INFO]: [PlaceholderAPI] 3 installed expansions have updates available.
+[19:16:15] [Craft Scheduler Thread - 5/INFO]: Opened connection [connectionId{localValue:2, serverValue:5053429}] to bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017
+[19:16:15] [Craft Scheduler Thread - 7/INFO]: Opened connection [connectionId{localValue:3, serverValue:5053428}] to bduj47tl1i9w5rm-mongodb.services.clever-cloud.com:27017
+[19:16:15] [Craft Scheduler Thread - 1/WARN]: [Vault] Stable Version: 1.7.3 is out! You are still running version: 1.5.6
+[19:16:15] [Craft Scheduler Thread - 1/WARN]: [Vault] Update at: http://dev.bukkit.org/server-mods/vault
+[19:16:20] [LoginProcessingThread/INFO]: UUID of player Flairings is 0ecf6aa0-857c-4249-bd17-ea6873f9a942
+[19:16:20] [Server thread/ERROR]: Cannot load plugins\Hub\config.yml
+org.bukkit.configuration.InvalidConfigurationException: expected '<document start>', but found BlockMappingStart
+ in 'string', line 7, column 1:
+    buttname: '&9EnderButt'
+    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:57) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:226) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:169) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:180) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:188) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:162) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at me.flairings.hub.scoreboard.Scoreboard.getTitle(Scoreboard.java:17) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.getObjective(AssembleBoard.java:72) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.setup(AssembleBoard.java:87) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.<init>(AssembleBoard.java:35) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleListener.onPlayerJoin(AssembleListener.java:35) [Hub.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:300) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:517) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:502) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.onPlayerJoin(PlayerList.java:316) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.a(PlayerList.java:175) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.b(AbstractLoginListener.java:145) [ProtocolSupport.jar:?]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.c(AbstractLoginListener.java:91) [ProtocolSupport.jar:?]
+	at net.minecraft.server.v1_8_R3.NetworkManager.a(NetworkManager.java:269) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.ServerConnection.c(ServerConnection.java:149) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:968) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:382) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:806) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:708) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
+Caused by: org.yaml.snakeyaml.parser.ParserException: expected '<document start>', but found BlockMappingStart
+ in 'string', line 7, column 1:
+    buttname: '&9EnderButt'
+    ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentStart.produce(ParserImpl.java:225) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:143) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:120) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:450) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:369) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	... 30 more
+[19:16:20] [Server thread/ERROR]: [Hub] Cannot load configuration from jar
+org.bukkit.configuration.InvalidConfigurationException: expected '<document start>', but found BlockMappingStart
+ in 'string', line 7, column 1:
+    buttname: '&9EnderButt'
+    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:57) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:214) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:162) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at me.flairings.hub.scoreboard.Scoreboard.getTitle(Scoreboard.java:17) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.getObjective(AssembleBoard.java:72) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.setup(AssembleBoard.java:87) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleBoard.<init>(AssembleBoard.java:35) [Hub.jar:?]
+	at me.flairings.hub.scoreboard.api.AssembleListener.onPlayerJoin(AssembleListener.java:35) [Hub.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:300) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:517) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:502) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.onPlayerJoin(PlayerList.java:316) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.a(PlayerList.java:175) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.b(AbstractLoginListener.java:145) [ProtocolSupport.jar:?]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.c(AbstractLoginListener.java:91) [ProtocolSupport.jar:?]
+	at net.minecraft.server.v1_8_R3.NetworkManager.a(NetworkManager.java:269) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.ServerConnection.c(ServerConnection.java:149) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:968) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:382) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:806) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:708) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
+Caused by: org.yaml.snakeyaml.parser.ParserException: expected '<document start>', but found BlockMappingStart
+ in 'string', line 7, column 1:
+    buttname: '&9EnderButt'
+    ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseDocumentStart.produce(ParserImpl.java:225) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:143) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:120) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:450) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:369) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	... 27 more
+[19:16:20] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to Hub v1.0-STABLE
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:302) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:517) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:502) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.onPlayerJoin(PlayerList.java:316) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.PlayerList.a(PlayerList.java:175) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.b(AbstractLoginListener.java:145) [ProtocolSupport.jar:?]
+	at protocolsupport.protocol.transformer.handlers.AbstractLoginListener.c(AbstractLoginListener.java:91) [ProtocolSupport.jar:?]
+	at net.minecraft.server.v1_8_R3.NetworkManager.a(NetworkManager.java:269) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.ServerConnection.c(ServerConnection.java:149) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:968) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:382) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:806) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:708) [Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
+Caused by: java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_271]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_271]
+	at me.flairings.hub.events.JoinEvents.onJoin(JoinEvents.java:44) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:300) ~[Toothless.jar:1.8.8-R0.1-SNAPSHOT]
+	... 15 more
+[19:16:20] [Server thread/INFO]: Flairings[/192.168.56.1:52734] logged in with entity id 27 at ([world]238.0, 164.0, 491.0)
+[19:16:21] [Craft Scheduler Thread - 4/INFO]: [0;36;1m[S] [0;32;1m[0;32;1mFlairings [0;36;22mhas joined [0;36;1mLobby[0;36;22m.[m

@@ -18,6 +18,10 @@ public class StatsCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
+        if (!player.hasPermission("kitpvp.command.stats")) {
+            player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("No-Permissions-Message")));
+            return true;
+        }
         if (args.length == 0) {
             Main.getInstance().getConfig().getStringList("stats.message").forEach(string -> sender.sendMessage(CC.translate(string)
                     .replace("{KILLS}", "" + player.getStatistic(Statistic.PLAYER_KILLS))

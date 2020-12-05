@@ -1,7 +1,7 @@
 package me.flairings.kitpvp;
 
-import me.flairings.kitpvp.api.InventoryHandler;
-import me.flairings.kitpvp.api.UtilConfig;
+import me.flairings.kitpvp.ui.api.InventoryHandler;
+import me.flairings.kitpvp.config.UtilConfig;
 import me.flairings.kitpvp.commands.*;
 import me.flairings.kitpvp.events.BlockEvents;
 import me.flairings.kitpvp.events.JoinEvents;
@@ -24,20 +24,18 @@ import java.util.UUID;
 import static org.bukkit.Bukkit.getPluginManager;
 
 public class Main extends JavaPlugin {
+    // cancer looking
     public static UtilConfig settings;
     public static HowToPlayUI howToPlayUI;
     public static Main instance;
     public static List<UUID> playerlist;
     private static InventoryHandler inventoryHandler;
-
     public static InventoryHandler getInventoryHandler() {
         return Main.inventoryHandler;
     }
-
     public static Main getInstance() {
         return instance;
     }
-
     private Poseidon poseidon;
     private PoseidonTablistTask task;
 
@@ -47,7 +45,8 @@ public class Main extends JavaPlugin {
     # - Fix on-kill message multiplying
     # Code Clean up
     # - Check plugin
-    # add tablist api
+    # - add tablist api
+    # fix death spam
      */
 
     @Override
@@ -62,7 +61,6 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&6&lKitPvP &7| &f" + Main.getInstance().getDescription().getPermissions().size() + " &6permissions have been registered."));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&6&lKitPvP &7| &f" + Main.getInstance().getDescription().getCommands().size() + " &6commands have been registered."));
-
     }
 
     public void loadEngine() {
@@ -70,7 +68,6 @@ public class Main extends JavaPlugin {
         playerlist = new ArrayList<>();
         inventoryHandler = new InventoryHandler().init();
         howToPlayUI = new HowToPlayUI();
-
         this.createYML();
     }
 
@@ -117,6 +114,7 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("          &6KitPvP &fhas been &cdisabled"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
+        safeunloadTablist();
     }
 
     public void createYML() {

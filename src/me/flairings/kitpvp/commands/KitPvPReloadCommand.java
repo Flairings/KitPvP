@@ -26,7 +26,7 @@ public class KitPvPReloadCommand implements CommandExecutor {
                 return true;
             }
             plugin.reloadConfig();
-            //plugin.getPluginLoader().disablePlugin(plugin); // CAUSES MULTI INSTANCES OF PLUGIN "KITPVP"
+            //plugin.getPluginLoader().disablePlugin(plugin); // CAUSES MULTI INSTANCES OF PLUGIN
             //plugin.getPluginLoader().enablePlugin(plugin);
             player.sendMessage(CC.translate(Main.getInstance().getConfig().getString("Reloaded-Message")));
         }

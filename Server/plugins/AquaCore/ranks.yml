@@ -25,12 +25,12 @@ Owner:
   type: DEFAULT
   global: true
   servers: []
-Developer:
-  name: Developer
-  prefix: '&7[&9Developer&7] &9&o'
+Manager:
+  name: Manager
+  prefix: '&7[&4Manager&7] &4&o'
   suffix: ''
   default-rank: false
-  rank-color: BLUE
+  rank-color: DARK_RED
   permissions: |-
     [
       {
@@ -52,12 +52,12 @@ Developer:
   type: DEFAULT
   global: true
   servers: []
-Manager:
-  name: Manager
-  prefix: '&7[&4Manager&7] &4&o'
+Developer:
+  name: Developer
+  prefix: '&7[&9Developer&7] &9&o'
   suffix: ''
   default-rank: false
-  rank-color: DARK_RED
+  rank-color: BLUE
   permissions: |-
     [
       {

@@ -17,9 +17,8 @@ public class KDEvents implements Listener {
         Player killer = player.getKiller();
         ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
 
-        if (player.isDead() && player.getKiller() instanceof Player) {
+        if (player.isDead() && player.getKiller() != null) {
             killer.giveExpLevels(Main.getInstance().getConfig().getInt("kd-events.xp-amount"));
-            //Commands on kill
             Main.getInstance().getConfig().getStringList("kd-events.commands").forEach(string -> Bukkit.dispatchCommand(console, (CC.translate(string)
                     .replace("{KILLER}", "" + killer.getName())
                     .replace("{VICTIM}", "" + player.getName()))));
@@ -35,7 +34,7 @@ public class KDEvents implements Listener {
                     .replace("{KILLER}", "" + killer.getName())
                     .replace("{VICTIM}", "" + player.getName())));
 
-            if (player.isDead() && player.getKiller() instanceof Player) {
+            if(player.getKiller() instanceof Player) {
                 Bukkit.getServer().broadcastMessage(CC.translate(Main.getInstance().getConfig().getString("kd-events.kill-message"))
                         .replace("{KILLER}", "" + killer.getName())
                         .replace("{VICTIM}", "" + player.getName()));

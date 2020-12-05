@@ -5,11 +5,11 @@ package me.flairings.kitpvp.tablist.tablist;
  */
 public enum Latency {
 
-    FIVE_BARS(149),
-    FOUR_BARS(299),
-    THREE_BARS(599),
-    TWO_BARS(999),
-    ONE_BAR(1001),
+    FIVE_BARS(40),
+    FOUR_BARS(80),
+    THREE_BARS(120),
+    TWO_BARS(230),
+    ONE_BAR(300),
     NO_BAR(-1);
 
     private final int value;

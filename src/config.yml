@@ -35,14 +35,6 @@ kd-events:
   victim-messages:
   - "&d&lUnoPvP &7┃ &dYou have lost 50$ for dying to {KILLER}"
 
-# Placeholders - {XP} {CMDs}
-# (DOES NOT SUPPORT PLACEHOLDERAPI)
-kill-rewards-help:
-  message:
-    - "&dCurrent kill reward settings: "
-    - "&dXP: &f{XP}"
-    - "&dCMDs: &f{CMDs}"
-
 # ** Stats **
 # (DOES NOT SUPPORT PLACEHOLDERAPI)
 stats:
@@ -64,20 +56,25 @@ stats-other:
 # ** Scoreboard **
 # (SUPPORTS PLACEHOLDERAPI)
 Scoreboard:
+  Title: "&d&lUnoPvP &7┃ &fKitPvP (DEV)"
   Default:
     - "&7&m-------------------------"
     - "&fRank: &r%aqua_player_rank%"
+    - "&fBalance: &d%vault_eco_balance_fixed%$"
     - "&fKills: &d%statistic_player_kills%"
     - "&fDeaths: &d%statistic_deaths%"
-    - "&fBalance: &d%vault_eco_balance_fixed%$"
     - "&7&m-------------------------"
     - "&fTeam: &d%betterTeams_name%"
     - "&7&m-------------------------"
 
 # ** Help UI **
 # (DOES NOT SUPPORT PLACEHOLDERAPI)
-items:
+helpui:
+  size: 27
+  title: "&dUnoPvP &8┃ &fHelp"
   kitpvp:
+    item: "BOOK"
+    itemposition: 11
     title: '&dKitPvP Commands'
     lore:
       - ''
@@ -88,6 +85,8 @@ items:
       - '&8* &cMore in development.'
       - ''
   howplay:
+    item: "BOOK"
+    itemposition: 13
     title: '&dHow to play'
     lore:
       - ''
@@ -95,6 +94,8 @@ items:
       - ' &fabilities, more & progress through the server!'
       - ''
   economy:
+    item: "BOOK"
+    itemposition: 15
     title: '&dEconomy Commands'
     lore:
       - ''
@@ -103,6 +104,3 @@ items:
       - '&8* &d/money check <name> &8&m-&f See the balance of others'
       - '&8* &d/money top &8&m-&f See the players with the highest balance.'
       - ''
-
-tablist:
-

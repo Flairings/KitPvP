@@ -14,7 +14,7 @@ public class Scoreboard implements AssembleAdapter {
 
     @Override
     public String getTitle(Player player) {
-        return ChatColor.GOLD.toString() + "&d&lUnoPvP &7┃ &fKitPvP";
+        return ChatColor.GOLD.toString() + Main.getInstance().getConfig().getString("Scoreboard.Title");
     }
 
     @Override
@@ -27,5 +27,4 @@ public class Scoreboard implements AssembleAdapter {
         }
         return toReturn;
     }
-
 }
