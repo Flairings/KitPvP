@@ -9,8 +9,6 @@ import me.flairings.kitpvp.events.KDEvents;
 import me.flairings.kitpvp.scoreboard.Scoreboard;
 import me.flairings.kitpvp.scoreboard.api.Assemble;
 import me.flairings.kitpvp.scoreboard.api.AssembleStyle;
-import me.flairings.kitpvp.tablist.Poseidon;
-import me.flairings.kitpvp.tablist.PoseidonTablistTask;
 import me.flairings.kitpvp.ui.HowToPlayUI;
 import me.flairings.kitpvp.utils.CC;
 import org.bukkit.Bukkit;
@@ -24,7 +22,6 @@ import java.util.UUID;
 import static org.bukkit.Bukkit.getPluginManager;
 
 public class Main extends JavaPlugin {
-    // cancer looking
     public static UtilConfig settings;
     public static HowToPlayUI howToPlayUI;
     public static Main instance;
@@ -36,8 +33,6 @@ public class Main extends JavaPlugin {
     public static Main getInstance() {
         return instance;
     }
-    private Poseidon poseidon;
-    private PoseidonTablistTask task;
 
     /*
     # TO-DO
@@ -52,7 +47,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         loadScoreboard();
-        loadTablist();
         loadEngine();
         loadEvents();
         loadCommands();
@@ -69,16 +63,6 @@ public class Main extends JavaPlugin {
         inventoryHandler = new InventoryHandler().init();
         howToPlayUI = new HowToPlayUI();
         this.createYML();
-    }
-
-    public void loadTablist() {
-        this.poseidon = new Poseidon(this, 10L);
-        this.task = new PoseidonTablistTask();
-    }
-
-    public void safeunloadTablist() {
-        this.task.cancel();
-        this.poseidon = null;
     }
 
     public void loadScoreboard() {
@@ -114,15 +98,10 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("          &6KitPvP &fhas been &cdisabled"));
         Bukkit.getConsoleSender().sendMessage(CC.translate("&7-------------------------------------------"));
-        safeunloadTablist();
     }
 
     public void createYML() {
         settings = new UtilConfig(this, "config.yml", null);
         settings.saveDefaultConfig();
-    }
-
-    public Poseidon getPoseidon() {
-        return poseidon;
     }
 }
