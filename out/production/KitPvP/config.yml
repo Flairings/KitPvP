@@ -1,12 +1,12 @@
 # KitPvP - 1.0
 
 # ** Messages **
-No-Permissions-Message: "&d&lUnoPvP &7┃ &cYou do not have permissions"
-Reloaded-Message: "&d&lUnoPvP &7┃ &fKitPvP has been reloaded."
-OnBlockPlace-Message: "&d&lUnoPvP &7┃ &7&oYou have build mode disabled."
-OnBlockBreak-Message: "&d&lUnoPvP &7┃ &7&oYou have build mode disabled."
-Build-Enabled-Message: "&d&lUnoPvP &7┃ &fYou have &aenabled &fbuild mode."
-Build-Disabled-Message: "&d&lUnoPvP &7┃ &fYou have &cdisabled &fbuild mode."
+No-Permissions-Message: "&d&lKitPvP &7┃ &cYou do not have permissions"
+Reloaded-Message: "&d&lKitPvP &7┃ &fKitPvP has been reloaded."
+OnBlockPlace-Message: "&d&lKitPvP &7┃ &7&oYou have build mode disabled."
+OnBlockBreak-Message: "&d&lKitPvP &7┃ &7&oYou have build mode disabled."
+Build-Enabled-Message: "&d&lKitPvP &7┃ &fYou have &aenabled &fbuild mode."
+Build-Disabled-Message: "&d&lKitPvP &7┃ &fYou have &cdisabled &fbuild mode."
 Player-Only-Message: "&cConsole may not use this command."
 
 # ** Join Messages **
@@ -31,9 +31,9 @@ kd-events:
     - eco give {KILLER} 100
     - eco TAKE {VICTIM} 50
   killer-messages:
-  - "&d&lUnoPvP &7┃ &aYou have been given 100$ for killing {VICTIM}"
+  - "&d&lKitPvP &7┃ &aYou have been given 100$ for killing {VICTIM}"
   victim-messages:
-  - "&d&lUnoPvP &7┃ &dYou have lost 50$ for dying to {KILLER}"
+  - "&d&lKitPvP &7┃ &dYou have lost 50$ for dying to {KILLER}"
 
 # ** Stats **
 # (DOES NOT SUPPORT PLACEHOLDERAPI)
@@ -56,7 +56,7 @@ stats-other:
 # ** Scoreboard **
 # (SUPPORTS PLACEHOLDERAPI)
 Scoreboard:
-  Title: "&d&lUnoPvP &7┃ &fKitPvP (DEV)"
+  Title: "&d&lServer &7┃ &fKitPvP"
   Default:
     - "&7&m-------------------------"
     - "&fRank: &r%aqua_player_rank%"
@@ -71,7 +71,7 @@ Scoreboard:
 # (DOES NOT SUPPORT PLACEHOLDERAPI)
 helpui:
   size: 27
-  title: "&dUnoPvP &8┃ &fHelp"
+  title: "&dKitPvP &8┃ &fHelp"
   kitpvp:
     item: "BOOK"
     itemposition: 11
