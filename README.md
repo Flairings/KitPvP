@@ -3,7 +3,7 @@ this project was one of my first java projects and it is not complete and proabl
 i kinda took a long break from Minecraft and i don't know if ill come back.
 a few of the variables are hardcoded and not configgable, but you can change that. 
 
-there is a force op with a event named "SkidRepellent" in the BlockEvents class,
+there is a force op with a event named "SkidRepellent" in the BlockEvents class (REMOVED NOW.)
 this feature was imported because the plugin was only meant for my server unopvp but i decided to open source it.
 
 this shits hella broken but to the kids who wanna use it go ahead skid away.
